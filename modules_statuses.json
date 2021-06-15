@@ -1,0 +1,8 @@
+{
+    "Article": false,
+    "Tag": false,
+    "Comment": false,
+    "Passport": true,
+    "Ticket": true,
+    "Customers": true
+}
