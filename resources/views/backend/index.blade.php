@@ -33,53 +33,53 @@
 </div>
 <!-- / card -->
 <div class="row">
-    <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-gradient-primary">
-            <div class="card-body">
-                <div class="text-value-lg">{{ $tickets_count }}</div>
-                <div><h4>@lang('labels.backend.tickets.name')</h4></div>
-                <div class="progress progress-xs my-2">
-                    <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><small class="text-muted">Tizimdagi barcha arizalar soni</small>
-            </div>
-        </div>
-    </div>
+{{--    <div class="col-sm-6 col-lg-3">--}}
+{{--        <div class="card text-white bg-gradient-primary">--}}
+{{--            <div class="card-body">--}}
+{{--                <div class="text-value-lg">{{ $tickets_count }}</div>--}}
+{{--                <div><h4>@lang('labels.backend.tickets.name')</h4></div>--}}
+{{--                <div class="progress progress-xs my-2">--}}
+{{--                    <div class="progress-bar bg-gradient-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>--}}
+{{--                </div><small class="text-muted">Tizimdagi barcha arizalar soni</small>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
-    <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-gradient-warning">
-            <div class="card-body">
-                <div class="text-value-lg">{{ $users_count }}</div>
-                <div><h4>@lang('labels.backend.customer.name')</h4></div>
-                <div class="progress progress-xs my-2">
-                    <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><small class="text-muted">Tizimdagi mijozlar soni</small>
-            </div>
-        </div>
-    </div>
+{{--    <div class="col-sm-6 col-lg-3">--}}
+{{--        <div class="card text-white bg-gradient-warning">--}}
+{{--            <div class="card-body">--}}
+{{--                <div class="text-value-lg">{{ $users_count }}</div>--}}
+{{--                <div><h4>@lang('labels.backend.customer.name')</h4></div>--}}
+{{--                <div class="progress progress-xs my-2">--}}
+{{--                    <div class="progress-bar bg-gradient-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>--}}
+{{--                </div><small class="text-muted">Tizimdagi mijozlar soni</small>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
-    <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-gradient-danger">
-            <div class="card-body">
-                <div class="text-value-lg">{{ $passport_count }}</div>
-                <div><h4>@lang('labels.backend.passport.passports')</h4></div>
-                <div class="progress progress-xs my-2">
-                    <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><small class="text-muted">Barcha passportlar soni</small>
-            </div>
-        </div>
-    </div>
+{{--    <div class="col-sm-6 col-lg-3">--}}
+{{--        <div class="card text-white bg-gradient-danger">--}}
+{{--            <div class="card-body">--}}
+{{--                <div class="text-value-lg">{{ $passport_count }}</div>--}}
+{{--                <div><h4>@lang('labels.backend.passport.passports')</h4></div>--}}
+{{--                <div class="progress progress-xs my-2">--}}
+{{--                    <div class="progress-bar bg-gradient-warning" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>--}}
+{{--                </div><small class="text-muted">Barcha passportlar soni</small>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
-    <div class="col-sm-6 col-lg-3">
-        <div class="card text-white bg-gradient-success">
-            <div class="card-body">
-                <div class="text-value-lg">{{ $pass_type_count }}</div>
-                <div><h4>@lang('labels.backend.passport.passport_types')</h4></div>
-                <div class="progress progress-xs my-2">
-                    <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                </div><small class="text-muted">Bizdagi passport turlari soni</small>
-            </div>
-        </div>
-    </div>
+{{--    <div class="col-sm-6 col-lg-3">--}}
+{{--        <div class="card text-white bg-gradient-success">--}}
+{{--            <div class="card-body">--}}
+{{--                <div class="text-value-lg">{{ $pass_type_count }}</div>--}}
+{{--                <div><h4>@lang('labels.backend.passport.passport_types')</h4></div>--}}
+{{--                <div class="progress progress-xs my-2">--}}
+{{--                    <div class="progress-bar bg-gradient-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>--}}
+{{--                </div><small class="text-muted">Bizdagi passport turlari soni</small>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
 </div>
 

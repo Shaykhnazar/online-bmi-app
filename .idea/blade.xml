@@ -14,6 +14,7 @@
       <data directive="@componentfirst" injection="true" prefix="&lt;?php $__env-&gt;startComponentFirst(" suffix="); ?&gt;" />
       <data directive="@continue" injection="true" prefix="&lt;?php if(" suffix=") continue; ?&gt;" />
       <data directive="@csrf" />
+      <data directive="@data_toggle_attribute" />
       <data directive="@dd" injection="true" prefix="&lt;?php dd(" suffix="); ?&gt;" />
       <data directive="@default" />
       <data directive="@dump" injection="true" prefix="&lt;?php dump(" suffix="); ?&gt;" />
@@ -71,6 +72,8 @@
       <data directive="@isset" injection="true" prefix="&lt;?php if(isset(" suffix=")): ?&gt;" />
       <data directive="@json" injection="true" prefix="&lt;?php echo json_encode(" suffix=") ?&gt;" />
       <data directive="@lang" injection="true" prefix="&lt;?php echo app('translator')-&gt;get(" suffix="); ?&gt;" />
+      <data directive="@lm_attrs" injection="true" prefix="&lt;?php _bladeDirective(" suffix="); ?&gt;" />
+      <data directive="@lm_endattrs" />
       <data directive="@method" injection="true" prefix="&lt;?php echo method_field(" suffix="); ?&gt;" />
       <data directive="@once" />
       <data directive="@overwrite" />

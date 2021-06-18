@@ -22,10 +22,10 @@ class PermissionRoleTableSeeder extends Seeder
 
         // Create Roles
         $super_admin = Role::create(['name' => 'super admin']);
-//        $admin = Role::create(['name' => 'administrator']);
-        $manager = Role::create(['name' => 'manager']);
-//        $executive = Role::create(['name' => 'executive']);
-        $user = Role::create(['name' => 'user']);
+        $ilmiy_rahbar = Role::create(['name' => 'ilmiy_rahbar']);
+        $kafedra_mudiri = Role::create(['name' => 'kafedra_mudiri']);
+        $direktor = Role::create(['name' => 'direktor']);
+        $talaba = Role::create(['name' => 'talaba']);
 
         // Create Permissions
         Permission::firstOrCreate(['name' => 'view_backend']);
@@ -39,56 +39,42 @@ class PermissionRoleTableSeeder extends Seeder
         }
 
         \Artisan::call('auth:permission', [
-            'name' => 'posts',
+            'name' => 'student',
         ]);
-        echo "\n _Posts_ Permissions Created.";
+        echo "\n _Talabalar_ Permissions Created.";
 
         \Artisan::call('auth:permission', [
-            'name' => 'categories',
+            'name' => 'teacher',
         ]);
-        echo "\n _Categories_ Permissions Created.";
+        echo "\n _Teachers_ Permissions Created.";
 
         \Artisan::call('auth:permission', [
-            'name' => 'tags',
+            'name' => 'group',
         ]);
-        echo "\n _Tags_ Permissions Created.";
+        echo "\n _Guruhlar_ Permissions Created.";
 
         \Artisan::call('auth:permission', [
-            'name' => 'comments',
+            'name' => 'theme',
         ]);
-        echo "\n _Comments_ Permissions Created.";
+        echo "\n _Mavzular_ Permissions Created.";
 
         \Artisan::call('auth:permission', [
-            'name' => 'customers',
+            'name' => 'rate',
         ]);
-        echo "\n _Customers_ Permissions Created.";
+        echo "\n _Baholash_ Permissions Created.";
 
         \Artisan::call('auth:permission', [
-            'name' => 'tickets',
+            'name' => 'report',
         ]);
-        echo "\n _Tickets_ Permissions Created.";
-
-        \Artisan::call('auth:permission', [
-            'name' => 'passports',
-        ]);
-        echo "\n _Passports_ Permissions Created.";
-
-        \Artisan::call('auth:permission', [
-            'name' => 'passport_types',
-        ]);
-        echo "\n _Passport types_ Permissions Created.";
-
-        \Artisan::call('auth:permission', [
-            'name' => 'feedback',
-        ]);
-        echo "\n _Feedback_ Permissions Created.";
+        echo "\n _Hisobotlar_ Permissions Created.";
 
         echo "\n\n";
 
         // Assign Permissions to Roles
-//        $admin->givePermissionTo(Permission::all());
-        $manager->givePermissionTo('view_backend');
-//        $executive->givePermissionTo('view_backend');
+        $super_admin->givePermissionTo(Permission::all());
+        $ilmiy_rahbar->givePermissionTo(['view_backend', 'view_groups', 'view_students', 'view_themes', 'view_rates', 'view_reports']);
+        $direktor->givePermissionTo('view_reports');
+        $kafedra_mudiri->givePermissionTo('view_reports');
 
         Schema::enableForeignKeyConstraints();
     }

@@ -131,13 +131,30 @@ return [
             'passport_types' => 'Passport types',
         ],
         'customer' => [
-            'name' => 'Physical persons'
+            'teacher' => [
+                'name' => 'Teachers'
+            ],
+            'name' => 'Students'
         ],
-        'tickets' => [
-            'name' => 'Tickets'
+        'groups' => [
+            'name' => 'Groups',
+            'fields' => [
+                'name' =>'Guruh nomi'
+            ]
         ],
-        'notify' => [
-            'name' => 'Notifications'
+        'mavzular' => [
+            'name' => 'Themes',
+            'fields' => [
+                'name' =>'Mavzu'
+            ]
+        ],
+        'baholash'=> [
+            'name' => 'Rates',
+            'fields' => [
+                'teacher'=> 'Teacher',
+                'theme'=> 'Theme',
+                'student'=> 'Student',
+            ]
         ],
         'feedback' => [
             'name' => 'Messages'

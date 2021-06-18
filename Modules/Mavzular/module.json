@@ -1,0 +1,13 @@
+{
+    "name": "Mavzular",
+    "alias": "mavzular",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Mavzular\\Providers\\MavzularServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

@@ -32,7 +32,7 @@ class GenerateMenus
             ]);
 
             // Notifications
-            $menu->add('<i class="c-sidebar-nav-icon fas fa-bell"></i> '.__('labels.backend.notify.name'), [
+            $menu->add('<i class="c-sidebar-nav-icon fas fa-bell"></i> '.__('labels.backend.feedback.name'), [
                 'route' => 'backend.notifications.index',
                 'class' => 'c-sidebar-nav-item',
             ])
@@ -45,19 +45,6 @@ class GenerateMenus
                 'class' => 'c-sidebar-nav-link',
             ]);
 
-            // Messages
-            $menu->add('<i class="c-sidebar-nav-icon fas fa-paper-plane"></i> '.__('labels.backend.feedback.name'), [
-                'route' => 'backend.feedback.index',
-                'class' => 'c-sidebar-nav-item',
-            ])
-            ->data([
-                'order'         => 100,
-                'activematches' => 'admin/feedback*',
-                'permission'    => [],
-            ])
-            ->link->attr([
-                'class' => 'c-sidebar-nav-link',
-            ]);
 
             // Separator: Access Management
             $menu->add('Management', [

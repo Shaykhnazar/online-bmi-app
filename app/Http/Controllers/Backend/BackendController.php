@@ -18,10 +18,10 @@ class BackendController extends Controller
     public function index()
     {
         return view('backend.index', [
-            'tickets_count' => Ticket::count(),
-            'users_count' => User::role('user')->count(),
-            'passport_count' => Passport::count(),
-            'pass_type_count' => PassportType::count(),
+//            'tickets_count' => Ticket::count(),
+//            'users_count' => User::role('user')->count(),
+//            'passport_count' => Passport::count(),
+//            'pass_type_count' => PassportType::count(),
         ]);
     }
 }

@@ -1,0 +1,13 @@
+{
+    "name": "Baholash",
+    "alias": "baholash",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Baholash\\Providers\\BaholashServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

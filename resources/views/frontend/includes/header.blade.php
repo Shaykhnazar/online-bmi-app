@@ -84,18 +84,18 @@
                                             <span class="small">@lang('labels.frontend.common.view_profile_details')</span>
                                         </div>
                                     </a>
-                                        @if(auth()->user()->tickets()->count() != null)
-                                        <a href="{{ route('frontend.users.tickets', auth()->user()->id) }}"
-                                            class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
-                                            <span class="icon icon-sm icon-warning"><i class="fas fa-ticket-alt"></i></span>
-                                            <div class="ml-4">
-                                                <span class="text-dark d-block">
-                                                    @lang('Mening arizalarim')
-                                                </span>
-                                                <span class="small">@lang('Sizning barcha arizalaringiz!')</span>
-                                            </div>
-                                        </a>
-                                        @endif
+{{--                                        @if(auth()->user()->tickets()->count() != null)--}}
+{{--                                                                          <a href="{{ route('frontend.users.tickets', auth()->user()->id) }}"--}}
+{{--                                            class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">--}}
+{{--                                            <span class="icon icon-sm icon-warning"><i class="fas fa-ticket-alt"></i></span>--}}
+{{--                                            <div class="ml-4">--}}
+{{--                                                <span class="text-dark d-block">--}}
+{{--                                                    @lang('Mening arizalarim')--}}
+{{--                                                </span>--}}
+{{--                                                <span class="small">@lang('Sizning barcha arizalaringiz!')</span>--}}
+{{--                                            </div>--}}
+{{--                                        </a>--}}
+{{--                                        @endif--}}
                                     <a href="{{ route('logout') }}"
                                         class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4" onclick="event.preventDefault(); document.getElementById('account-logout-form').submit();">
                                         <span class="icon icon-sm icon-secondary">
@@ -145,15 +145,15 @@
                 @can('view_backend')
                     <a href="{{ route('backend.dashboard') }}" class="btn btn-white animate-up-2 mr-3"><i class="fas fa-tachometer-alt mr-2"></i> @lang('Dashboard')</a>
 
-                @else
-                    @auth()
-                        <a href="{{ route('frontend.ticket') }}" class="btn btn-success animate-up-2 mr-3"><i class="fas fa-ticket-alt mr-2"></i> @lang('labels.frontend.common.ticket')</a>
-                    @endauth
+{{--                @else--}}
+{{--                    @auth()--}}
+{{--                        <a href="{{ route('frontend.ticket') }}" class="btn btn-success animate-up-2 mr-3"><i class="fas fa-ticket-alt mr-2"></i> @lang('labels.frontend.common.ticket')</a>--}}
+{{--                    @endauth--}}
                 @endcan
 
-                <a href="{{ route('frontend.support') }}" class="btn btn-outline-white animate-up-2 mr-3"><i class="fas fa-th-large mr-2"></i> @lang('labels.frontend.common.support')</a>
+{{--                <a href="{{ route('frontend.support') }}" class="btn btn-outline-white animate-up-2 mr-3"><i class="fas fa-th-large mr-2"></i> @lang('labels.frontend.common.support')</a>--}}
 
-                <a href="{{ route('frontend.contact') }}" target="_blank" class="btn btn-secondary animate-up-2"><i class="fas fa-paper-plane mr-2"></i> @lang('labels.frontend.common.contact')</a>
+{{--                <a href="{{ route('frontend.contact') }}" target="_blank" class="btn btn-secondary animate-up-2"><i class="fas fa-paper-plane mr-2"></i> @lang('labels.frontend.common.contact')</a>--}}
             </div>
             <div class="d-flex d-lg-none align-items-center">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>

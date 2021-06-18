@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Modules\Groups\Entities\Group;
 use Modules\Passport\Entities\Passport;
 use Modules\Ticket\Entities\Ticket;
 use Spatie\MediaLibrary\HasMedia;
@@ -85,6 +86,14 @@ class User extends Authenticatable implements HasMedia, MustVerifyEmail
     public function userprofile()
     {
         return $this->hasOne('App\Models\Userprofile');
+    }
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function group()
+    {
+        return $this->hasOne(Group::class, 'id','group_id');
     }
 
     // /**

@@ -1,8 +1,8 @@
 {
-    "Article": false,
-    "Tag": false,
-    "Comment": false,
-    "Passport": true,
-    "Ticket": true,
-    "Customers": true
+    "Students": true,
+    "Mavzular": true,
+    "Baholash": true,
+    "Reports": true,
+    "Groups": true,
+    "Teachers": true
 }

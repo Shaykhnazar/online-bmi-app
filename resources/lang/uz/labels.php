@@ -122,7 +122,7 @@ return [
                 'status'      => 'Status',
                 'permissions' => 'Permissions',
                 'created_at'  => 'Created At',
-                'updated_at'  => 'Updated At',
+                'updated_at'  => 'Yangilangan',
             ],
 
         ],
@@ -131,13 +131,30 @@ return [
             'passport_types' => 'Passport turlari',
         ],
         'customer' => [
-            'name' => 'Jismoniy shaxslar'
+            'name' => 'Talabalar'
         ],
-        'tickets' => [
-            'name' => 'Arizalar'
+        'teacher' => [
+            'name' => 'Ilmiy Rahbarlar'
         ],
-        'notify' => [
-            'name' => 'Bildirishnomalar'
+        'groups' => [
+            'name' => 'Guruhlar',
+            'fields' => [
+                'name' =>'Guruh nomi'
+            ]
+        ],
+        'mavzular' => [
+            'name' => 'Mavzular',
+            'fields' => [
+                'name' =>'Mavzu'
+            ]
+        ],
+        'baholash'=> [
+            'name' => 'Baholash',
+            'fields' => [
+                'teacher'=> 'Ilmiy Rahbar',
+                'theme'=> 'Mavzu',
+                'student'=> 'Talaba',
+            ]
         ],
         'feedback' => [
             'name' => 'Xabarlar'
