@@ -142,6 +142,9 @@ return [
                 'name' =>'Guruh nomi'
             ]
         ],
+        'report' => [
+            'name' => 'Umumiy Natijalar'
+        ],
         'mavzular' => [
             'name' => 'Themes',
             'fields' => [

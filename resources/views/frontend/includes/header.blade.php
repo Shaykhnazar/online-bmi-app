@@ -26,42 +26,6 @@
                             <span class="fas fa-home mr-2"></span> @lang('labels.frontend.common.home')
                         </a>
                     </li>
-{{--                    <li class="nav-item">--}}
-{{--                        <a href="{{ route('frontend.posts.index') }}" class="nav-link">--}}
-{{--                            <span class="fas fa-file-alt mr-1"></span> Posts--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                    <li class="nav-item dropdown">--}}
-{{--                        <a href="#" class="nav-link" data-toggle="dropdown" aria-controls="pages_submenu" aria-expanded="false" aria-label="Toggle pages menu item">--}}
-{{--                            <span class="nav-link-inner-text">--}}
-{{--                                <span class="fas fa-file-image mr-1"></span>--}}
-{{--                                Pages--}}
-{{--                            </span>--}}
-{{--                            <span class="fas fa-angle-down nav-link-arrow ml-2"></span>--}}
-{{--                        </a>--}}
-{{--                        <ul class="dropdown-menu" id="pages_submenu">--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="{{ route('frontend.posts.index') }}">--}}
-{{--                                    <span class="fas fa-file-alt mr-1"></span> Posts--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="{{ route('frontend.categories.index') }}">--}}
-{{--                                    <span class="fas fa-sitemap mr-1"></span> Categories--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="{{ route('frontend.tags.index') }}">--}}
-{{--                                    <span class="fas fa-tags mr-1"></span> Tags--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                            <li>--}}
-{{--                                <a class="dropdown-item" href="{{ route('frontend.comments.index') }}">--}}
-{{--                                    <span class="fas fa-comments mr-1"></span> Comments--}}
-{{--                                </a>--}}
-{{--                            </li>--}}
-{{--                        </ul>--}}
-{{--                    </li>--}}
                     <li class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" aria-expanded="false" data-toggle="dropdown">
                             <span class="nav-link-inner-text mr-1">
@@ -84,18 +48,20 @@
                                             <span class="small">@lang('labels.frontend.common.view_profile_details')</span>
                                         </div>
                                     </a>
-{{--                                        @if(auth()->user()->tickets()->count() != null)--}}
-{{--                                                                          <a href="{{ route('frontend.users.tickets', auth()->user()->id) }}"--}}
-{{--                                            class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">--}}
-{{--                                            <span class="icon icon-sm icon-warning"><i class="fas fa-ticket-alt"></i></span>--}}
-{{--                                            <div class="ml-4">--}}
-{{--                                                <span class="text-dark d-block">--}}
-{{--                                                    @lang('Mening arizalarim')--}}
-{{--                                                </span>--}}
-{{--                                                <span class="small">@lang('Sizning barcha arizalaringiz!')</span>--}}
-{{--                                            </div>--}}
-{{--                                        </a>--}}
-{{--                                        @endif--}}
+                                        @role('talaba')
+                                            @if(\Modules\Baholash\Entities\StudentRates::where('student_id', auth()->user()->id)->first())
+                                                <a href="{{ route("frontend.users.results", auth()->user()->id) }}"
+                                                class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
+                                                <span class="icon icon-sm icon-warning"><i class="fas fa-ticket-alt"></i></span>
+                                                <div class="ml-4">
+                                                    <span class="text-dark d-block">
+                                                        @lang('Mening natijalarim')
+                                                    </span>
+                                                    <span class="small">@lang('Sizning BMI bo\'yicha baholaringiz!')</span>
+                                                </div>
+                                                </a>
+                                            @endif
+                                        @endrole
                                     <a href="{{ route('logout') }}"
                                         class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4" onclick="event.preventDefault(); document.getElementById('account-logout-form').submit();">
                                         <span class="icon icon-sm icon-secondary">
@@ -123,16 +89,16 @@
                                         </div>
                                     </a>
                                     @if(user_registration())
-                                    <a href="{{ route('register') }}"
-                                        class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">
-                                        <span class="icon icon-sm icon-primary">
-                                            <i class="fas fa-address-card"></i>
-                                        </span>
-                                        <div class="ml-4">
-                                            <span class="text-dark d-block">@lang('labels.frontend.common.register')</span>
-                                            <span class="small">@lang('labels.frontend.common.register_join')</span>
-                                        </div>
-                                    </a>
+{{--                                    <a href="{{ route('register') }}"--}}
+{{--                                        class="list-group-item list-group-item-action d-flex align-items-center p-0 py-3 px-lg-4">--}}
+{{--                                        <span class="icon icon-sm icon-primary">--}}
+{{--                                            <i class="fas fa-address-card"></i>--}}
+{{--                                        </span>--}}
+{{--                                        <div class="ml-4">--}}
+{{--                                            <span class="text-dark d-block">@lang('labels.frontend.common.register')</span>--}}
+{{--                                            <span class="small">@lang('labels.frontend.common.register_join')</span>--}}
+{{--                                        </div>--}}
+{{--                                    </a>--}}
                                     @endif
                                     @endauth
                                 </div>

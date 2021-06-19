@@ -71,7 +71,7 @@
                         </div>
                     </div>
                 </form>
-                <small class="mt-2 form-text">@lang('labels.frontend.common.subscribe_desc_bottom') <a href="{{route('frontend.privacy')}}" class="font-weight-bold text-underline">@lang('labels.frontend.common.privacy')</a></small>
+                <small class="mt-2 form-text">@lang('labels.frontend.common.subscribe_desc_bottom') <a href="#" class="font-weight-bold text-underline">@lang('labels.frontend.common.privacy')</a></small>
             </div>
         </div>
 

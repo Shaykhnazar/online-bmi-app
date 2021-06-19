@@ -17,7 +17,7 @@ return [
         'need_help'             => 'Need Help?',
         'select_an_option'      => 'Please Select',
         'profile'               => 'Profile',
-        'logout'                => 'Logout',
+        'logout'                => 'Chiqish',
         'male'                  => 'Male',
         'female'                => 'Female',
         'hijra'                 => 'Hijra',
@@ -135,6 +135,9 @@ return [
         ],
         'teacher' => [
             'name' => 'Ilmiy Rahbarlar'
+        ],
+        'report' => [
+            'name' => 'Umumiy Natijalar'
         ],
         'groups' => [
             'name' => 'Guruhlar',

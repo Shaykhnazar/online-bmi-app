@@ -29,13 +29,13 @@ Route::get('language/{language}', 'LanguageController@switch')->name('language.s
 Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
     Route::get('/', 'FrontendController@index')->name('index');
     Route::get('home', 'FrontendController@index')->name('home');
-    Route::get('privacy', 'FrontendController@privacy')->name('privacy');
-    Route::get('terms', 'FrontendController@terms')->name('terms');
-    Route::get('support', 'FrontendController@support')->name('support');
-    Route::get('contact', 'FrontendController@contact')->name('contact');
-    Route::post('contact', 'FrontendController@contactSubmit')->name('contact.post');
-    Route::get('ticket', 'FrontendController@ticket')->name('ticket');
-    Route::post('ticket', 'FrontendController@ticketSubmit')->name('ticket.post');
+//    Route::get('privacy', 'FrontendController@privacy')->name('privacy');
+//    Route::get('terms', 'FrontendController@terms')->name('terms');
+//    Route::get('support', 'FrontendController@support')->name('support');
+//    Route::get('contact', 'FrontendController@contact')->name('contact');
+//    Route::post('contact', 'FrontendController@contactSubmit')->name('contact.post');
+//    Route::get('ticket', 'FrontendController@ticket')->name('ticket');
+//    Route::post('ticket', 'FrontendController@ticketSubmit')->name('ticket.post');
 
     Route::group(['middleware' => ['auth']], function () {
         /*
@@ -46,7 +46,7 @@ Route::group(['namespace' => 'Frontend', 'as' => 'frontend.'], function () {
         */
         $module_name = 'users';
         $controller_name = 'UserController';
-        Route::get("profile/{id}/tickets", ['as' => "$module_name.tickets", 'uses' => "$controller_name@tickets"]);
+        Route::get("profile/{id}/results", ['as' => "$module_name.results", 'uses' => "$controller_name@results"])->middleware('role:talaba');
         Route::get("profile/{id}", ['as' => "$module_name.profile", 'uses' => "$controller_name@profile"]);
         Route::get('profile/{id}/edit', ['as' => "$module_name.profileEdit", 'uses' => "$controller_name@profileEdit"]);
         Route::patch('profile/{id}/edit', ['as' => "$module_name.profileUpdate", 'uses' => "$controller_name@profileUpdate"]);

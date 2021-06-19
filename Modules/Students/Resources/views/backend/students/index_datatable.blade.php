@@ -51,6 +51,7 @@
                             <tr>
                                 <th>#</th>
                                 <th>{{ __('labels.backend.users.fields.name') }}</th>
+                                <th>{{ __('labels.backend.groups.fields.name') }}</th>
                                 <th>{{ __('labels.backend.users.fields.email') }}</th>
                                 <th>{{ __('labels.backend.users.fields.status') }}</th>
                                 <th class="text-right">{{ __('labels.backend.action') }}</th>
@@ -99,6 +100,7 @@
         columns: [
             {data: 'id', name: 'id'},
             {data: 'name', name: 'name'},
+            {data: 'group_id', name: 'group_id'},
             {data: 'email', name: 'email'},
             {data: 'status', name: 'status'},
             {data: 'action', name: 'action', orderable: false, searchable: false}

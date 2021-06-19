@@ -101,6 +101,9 @@ class StudentsController extends Controller
 
                 return $return_data;
             })
+            ->editColumn('group_id', function ($data) {
+                return $data->group->group_name;
+            })
             ->editColumn('updated_at', function ($data) {
                 $module_name = $this->module_name;
 
@@ -598,9 +601,12 @@ class StudentsController extends Controller
             'url_linkedin' => 'nullable|min:3|max:191',
         ]);
 
+        $data_array = $request->except(['roles', 'permissions']);
+        $data_array['name'] = $request->first_name . ' ' . $request->last_name;
+        
         $$module_name_singular = User::findOrFail($id);
 
-        $$module_name_singular->update($request->except(['roles', 'permissions']));
+        $$module_name_singular->update($data_array);
 
         if ($id == 1) {
             $user->syncRoles(['super admin']);
@@ -609,7 +615,7 @@ class StudentsController extends Controller
         }
 
         // Sync Roles
-        $roles = [];
+        $roles = ['talaba'];
         $$module_name_singular->syncRoles($roles);
 
         // Sync Permissions

@@ -15,6 +15,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Log;
+use Modules\Baholash\Entities\StudentRates;
 use Modules\Ticket\Entities\Ticket;
 
 class UserController extends Controller
@@ -109,7 +110,7 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function tickets($id)
+    public function results($id)
     {
         $module_title = $this->module_title;
         $module_name = $this->module_name;
@@ -117,14 +118,14 @@ class UserController extends Controller
         $module_icon = $this->module_icon;
         $module_model = $this->module_model;
         $module_name_singular = Str::singular($module_name);
-        $module_action = 'Tickets';
+        $module_action = 'Results';
 
         $$module_name_singular = $module_model::findOrFail($id);
 
         if ($$module_name_singular) {
-            $tickets = Ticket::where('user_id', $id)->get();
+            $rates = StudentRates::with('teacher', 'theme')->where('student_id', $id)->first(['teacher_id', 'theme_id', 'k1', 'k2', 'k3', 'k4', 'updated_at']);
         } else {
-            Log::error('Tickets Exception for User: '.optional($$module_name_singular->name));
+            Log::error('Results Exception for User: '.optional($$module_name_singular->name));
             abort(404);
         }
 
@@ -132,7 +133,7 @@ class UserController extends Controller
 
         $meta_page_type = 'profile';
 
-        return view("frontend.$module_name.tickets", compact('module_name', 'module_name_singular', "$module_name_singular", 'module_icon', 'module_action', 'module_title', 'body_class', 'tickets', 'meta_page_type'));
+        return view("frontend.$module_name.results", compact('module_name', 'module_name_singular', "$module_name_singular", 'module_icon', 'module_action', 'module_title', 'body_class', 'rates', 'meta_page_type'));
     }
 
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace Modules\Students\Http\Middleware;
+namespace Modules\Reports\Http\Middleware;
 
 use Closure;
 
@@ -24,19 +24,19 @@ class GenerateMenus
          */
         \Menu::make('admin_sidebar', function ($menu) {
 
-            // Students
-            $menu->add('<i class="fas fa-people-arrows c-sidebar-nav-icon"></i> '.__('labels.backend.customer.name'), [
-                'route' => 'backend.students.index',
+            // reposts
+            $menu->add('<i class="fas fa-table c-sidebar-nav-icon"></i> '.__('labels.backend.report.name'), [
+                'route' => 'backend.reports.index',
                 'class' => "c-sidebar-nav-item",
             ])
-                ->data([
-                    'order' => 84,
-                    'activematches' => ['admin/students*'],
-                    'permission' => ['view_students'],
-                ])
-                ->link->attr([
-                    'class' => 'c-sidebar-nav-link',
-                ]);
+            ->data([
+                'order' => 84,
+                'activematches' => ['admin/reports*'],
+                'permission' => ['view_reports'],
+            ])
+            ->link->attr([
+                'class' => 'c-sidebar-nav-link',
+            ]);
         })->sortBy('order');
 
         return $next($request);
