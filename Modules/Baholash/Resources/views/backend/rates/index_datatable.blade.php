@@ -50,10 +50,10 @@
                                 #
                             </th>
                             <th>
-                                {{ __('labels.backend.baholash.fields.student') }}
+                                {{ __('labels.backend.baholash.fields.theme') }}
                             </th>
                             <th>
-                                {{ __('labels.backend.baholash.fields.theme') }}
+                                {{ __('labels.backend.baholash.fields.student') }}
                             </th>
                             <th>
                                 {{ __('k1') }}

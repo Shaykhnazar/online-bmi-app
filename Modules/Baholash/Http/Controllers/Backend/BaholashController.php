@@ -130,10 +130,10 @@ class BaholashController extends Controller
 //                return $data->teacher->name;
 //            })
             ->editColumn('student_id', function ($data){
-                return $data->student->name;
+                return optional($data->student)->name;
             })
             ->editColumn('theme_id', function ($data){
-                return $data->theme->mavzu;
+                return optional($data->theme)->mavzu;
             })
             ->editColumn('updated_at', function ($data) {
                 $module_name = $this->module_name;

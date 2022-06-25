@@ -120,16 +120,16 @@ class ReportsController extends Controller
 //                return view('backend.includes.action_column', compact('module_name', 'data'));
 //            })
             ->editColumn('teacher_id', function ($data){
-                return $data->teacher->name;
+                return optional($data->teacher)->name;
             })
             ->editColumn('student_id', function ($data){
-                return $data->student->name;
+                return optional($data->student)->name;
             })
             ->editColumn('theme_id', function ($data){
-                return $data->theme->mavzu;
+                return optional($data->theme)->mavzu;
             })
             ->addColumn('group_name', function ($data){
-                return $data->student->group->group_name;
+                return optional($data->student->group)->group_name;
             })
             ->addColumn('result', function ($data){
                 $result = ($data->k1 + $data->k2 + $data->k3 + $data->k4)/4;

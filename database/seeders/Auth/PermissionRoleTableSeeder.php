@@ -68,11 +68,16 @@ class PermissionRoleTableSeeder extends Seeder
         ]);
         echo "\n _Hisobotlar_ Permissions Created.";
 
+        \Artisan::call('auth:permission', [
+            'name' => 'task',
+        ]);
+        echo "\n _Topshiriqlar_ Permissions Created.";
+
         echo "\n\n";
 
         // Assign Permissions to Roles
         $super_admin->givePermissionTo(Permission::all());
-        $ilmiy_rahbar->givePermissionTo(['view_backend', 'view_groups', 'view_students', 'view_themes', 'view_rates', 'view_reports']);
+        $ilmiy_rahbar->givePermissionTo(['view_backend', 'view_groups', 'view_students', 'view_themes', 'view_rates', 'view_reports', 'view_tasks']);
         $direktor->givePermissionTo('view_reports');
         $kafedra_mudiri->givePermissionTo('view_reports');
 

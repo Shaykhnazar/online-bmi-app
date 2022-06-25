@@ -102,7 +102,7 @@ class StudentsController extends Controller
                 return $return_data;
             })
             ->editColumn('group_id', function ($data) {
-                return $data->group->group_name;
+                return optional($data->group)->group_name;
             })
             ->editColumn('updated_at', function ($data) {
                 $module_name = $this->module_name;
@@ -603,7 +603,7 @@ class StudentsController extends Controller
 
         $data_array = $request->except(['roles', 'permissions']);
         $data_array['name'] = $request->first_name . ' ' . $request->last_name;
-        
+
         $$module_name_singular = User::findOrFail($id);
 
         $$module_name_singular->update($data_array);

@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c19b0061-3e04-48a9-b7f6-5cd2b62e8d37" name="Default Changelist" comment="logo change" />
+    <list default="true" id="c19b0061-3e04-48a9-b7f6-5cd2b62e8d37" name="Default Changelist" comment="logo change">
+      <change beforePath="$PROJECT_DIR$/.idea/blade.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blade.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/online-bmi-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/online-bmi-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Baholash/Http/Controllers/Backend/BaholashController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Baholash/Http/Controllers/Backend/BaholashController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Baholash/Http/Requests/Backend/BaholashRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Baholash/Http/Requests/Backend/BaholashRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Baholash/Resources/views/backend/rates/index_datatable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Baholash/Resources/views/backend/rates/index_datatable.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Reports/Http/Controllers/Backend/ReportsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Reports/Http/Controllers/Backend/ReportsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Students/Http/Controllers/Backend/StudentsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Students/Http/Controllers/Backend/StudentsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/Auth/PermissionRoleTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/Auth/PermissionRoleTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules_statuses.json" beforeDir="false" afterPath="$PROJECT_DIR$/modules_statuses.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/labels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/uz/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/uz/labels.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -190,21 +206,23 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/Projects/Web/conference-paper/Conference-paper",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\Web\online-bmi-app\Modules\Tasks\Resources\views\backend\tasks" />
+      <recent name="D:\Projects\Web\online-bmi-app\Modules\Tasks\Http\Requests\Backend" />
+      <recent name="D:\Projects\Web\online-bmi-app\Modules\Tasks\Http\Controllers\Backend" />
+      <recent name="D:\Projects\Web\online-bmi-app\Modules\Tasks\Http\Middleware" />
       <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Reports\Resources\views" />
-      <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Reports\Http\Controllers" />
-      <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Reports\Http\Middleware" />
-      <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Teachers\Resources\views" />
-      <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Teachers\Http\Middleware" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Groups\Http\Requests\Backend" />
@@ -234,7 +252,12 @@
       <workItem from="1623991607633" duration="6784000" />
       <workItem from="1624030416528" duration="14112000" />
       <workItem from="1624082936765" duration="9118000" />
-      <workItem from="1655190353107" duration="1682000" />
+      <workItem from="1655190353107" duration="2120000" />
+      <workItem from="1655665885348" duration="397000" />
+      <workItem from="1655696276142" duration="10000" />
+      <workItem from="1655702614354" duration="248000" />
+      <workItem from="1656134699085" duration="175000" />
+      <workItem from="1656134922419" duration="12100000" />
     </task>
     <task id="LOCAL-00001" summary="logo change">
       <created>1655192019768</created>
@@ -243,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655192019768</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="logo change">
+      <created>1655192078512</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655192078512</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

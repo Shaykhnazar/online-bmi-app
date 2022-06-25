@@ -151,6 +151,14 @@ return [
                 'name' =>'Mavzu'
             ]
         ],
+        'tasks' => [
+            'name' => 'Topshiriqlar',
+            'fields' => [
+                'name' =>'Topshiriq nomi',
+                'percent' =>'Umumiy ulushi(% larda)',
+                'deadline' =>'Bajarish muddati',
+            ]
+        ],
         'baholash'=> [
             'name' => 'Baholash',
             'fields' => [

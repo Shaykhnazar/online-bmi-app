@@ -53,6 +53,7 @@ final class BaholashRequest extends FormRequest
         return [
             'student_id' => 'Talaba',
             'theme_id' => 'Mavzu',
+            'teacher_id' => 'Rahbar',
             'k1' => 'Ko\'rsatkich 1',
             'k2' => 'Ko\'rsatkich 2',
             'k3' => 'Ko\'rsatkich 3',
