@@ -21,6 +21,17 @@
       <change beforePath="$PROJECT_DIR$/resources/lang/en/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/labels.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/lang/uz/labels.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/uz/labels.php" afterDir="false" />
     </list>
+    <list default="true" id="c19b0061-3e04-48a9-b7f6-5cd2b62e8d37" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-idea.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-idea.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/includes/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/includes/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/preloader.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/preloader.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/includes/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/includes/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/includes/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/includes/header.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +43,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -216,6 +230,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Projects\Web\online-bmi-app\Modules\Tasks\Resources\views\backend\tasks" />
@@ -223,6 +250,10 @@
       <recent name="D:\Projects\Web\online-bmi-app\Modules\Tasks\Http\Controllers\Backend" />
       <recent name="D:\Projects\Web\online-bmi-app\Modules\Tasks\Http\Middleware" />
       <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Reports\Resources\views" />
+      <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Reports\Http\Controllers" />
+      <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Reports\Http\Middleware" />
+      <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Teachers\Resources\views" />
+      <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Teachers\Http\Middleware" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\PROJECTS\Laravel\online-bmi-app\Modules\Groups\Http\Requests\Backend" />
